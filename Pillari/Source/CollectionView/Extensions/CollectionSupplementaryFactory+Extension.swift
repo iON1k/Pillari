@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 27.10.17.
-
 public extension CollectionSupplementaryFactory {
     convenience init<TView: UICollectionReusableView>(_ viewType: TView.Type, reuseId: String? = nil) {
         self.init { collectionView, kind, indexPath in

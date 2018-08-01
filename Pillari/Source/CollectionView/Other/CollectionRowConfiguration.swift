@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 24.10.17.
-
 public struct CollectionRowConfiguration {
     public struct Should {
         public var highlight: Bool

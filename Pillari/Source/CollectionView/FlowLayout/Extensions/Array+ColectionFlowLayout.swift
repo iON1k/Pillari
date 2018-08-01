@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 24.10.17.
-
 public extension Array where Element: CollectionFlowLayoutSectionProtocol {
     func asCollectionFlowLayoutDataProvider(layout: UICollectionViewFlowLayout) -> CollectionFlowLayoutDataProvider {
         return (self as [CollectionFlowLayoutSectionProtocol]).asCollectionFlowLayoutDataProvider(layout: layout)

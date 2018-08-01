@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 21.11.17.
-
 import UIKit
 
 class UICollectionElementsFactory {

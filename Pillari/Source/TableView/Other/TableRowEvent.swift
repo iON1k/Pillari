@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 12.09.17.
-
 public enum TableRowEvent {
     case didConfigure(context: (table: UITableView, cell: UITableViewCell, index: IndexPath))
     case willSelect(context: (table: UITableView, index: IndexPath))

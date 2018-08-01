@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 31.10.17.
-
 import Pillari
 
 final class CollectionViewController: UICollectionViewController {

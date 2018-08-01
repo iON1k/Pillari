@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 24.10.17.
-
 public final class CollectionFlowLayoutDataProvider: CollectionDataProviderProtocol,
     CollectionDataSourceProtocol, CollectionFlowLayoutSourceProtocol {
     public var sections: [CollectionSectionProtocol] {

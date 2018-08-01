@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 27.10.17.
-
 public extension CollectionSupplementary where TView: Configurable {
     convenience init(item: TView.Configuration,
                      reuseId: String? = nil,

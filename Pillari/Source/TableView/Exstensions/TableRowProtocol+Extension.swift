@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 12.04.2018.
-
 public extension TableRowProtocol {
     func withAction(_ eventsHandler: @escaping EventsHandler<TableRowEvent>.Handler) -> TableRowProtocol {
         return TableRow<UITableViewCell>(

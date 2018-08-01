@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 29.09.17.
-
 public final class EventsHandler<TEvent> {
     public typealias Handler = (TEvent) -> Void
 

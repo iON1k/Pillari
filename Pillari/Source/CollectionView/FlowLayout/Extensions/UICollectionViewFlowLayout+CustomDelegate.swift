@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 23.10.17.
-
 extension UICollectionViewFlowLayout: AssociatedObjectStore { }
 
 extension UICollectionViewFlowLayout {

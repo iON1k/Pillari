@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 26.09.17.
-
 public final class TableRow<TCell: UITableViewCell>: TableRowProtocol {
     public typealias RowEventsHandler = EventsHandler<TableRowEvent>
 

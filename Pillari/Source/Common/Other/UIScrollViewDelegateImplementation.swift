@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 25.10.17.
-
 public class UIScrollViewDelegateImplementation: NSObject {
     internal var forwardScrollDelegate: UIScrollViewDelegate? {
         return nil

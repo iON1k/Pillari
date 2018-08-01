@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 25.10.17.
-
 public extension UICollectionView {
     func registerCell<TCell: UICollectionViewCell>(_ cellType: TCell.Type, reuseId: String? = nil) {
         let normalizedReuseId = reuseId ?? UICollectionView.defaultReuseId(for: cellType)

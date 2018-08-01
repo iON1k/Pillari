@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 10.11.17.
-
 import Nimble
 
 func expectOnlyOneEvent<TEvent>(_ events: [TEvent]) -> TEvent? {

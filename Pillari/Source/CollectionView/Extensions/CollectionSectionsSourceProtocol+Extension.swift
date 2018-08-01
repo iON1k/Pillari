@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 24.10.17.
-
 public extension CollectionDataSourceProtocol {
     func row(section sectionIndex: Int, row rowIndex: Int) -> CollectionRowProtocol? {
         return section(for: sectionIndex)?.rows[try: rowIndex]

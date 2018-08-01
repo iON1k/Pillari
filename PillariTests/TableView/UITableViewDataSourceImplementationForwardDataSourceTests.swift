@@ -1,8 +1,4 @@
-//  Created by Anton Popkov on 25.08.17.
-
-import Quick
-import Nimble
-
+import Quickimport Nimble
 @testable import Pillari
 
 // swiftlint:disable function_body_length

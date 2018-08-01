@@ -1,8 +1,4 @@
-//  Created by Anton Popkov on 17.11.17.
-
-import Quick
-import Nimble
-
+import Quickimport Nimble
 @testable import Pillari
 
 class ArrayColectionFlowLayoutTests: QuickSpec {

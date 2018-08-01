@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 28.11.2017.
-
 import UIKit
 
 // swiftlint:disable identifier_name

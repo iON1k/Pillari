@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 03.10.17.
-
 public final class TableElementHeightCalculator: TableElementHeightCalculatorProtocol {
     public typealias HeightCalculationHandler = (UITableView) -> CGFloat
 

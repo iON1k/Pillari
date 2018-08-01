@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 25.10.17.
-
 public extension Array where Element: TableSectionProtocol {
     func asDataSource() -> TableDataSource {
         return (self as [TableSectionProtocol]).asDataSource()

@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 13.11.17.
-
 import UIKit
 
 class UICollectionViewMock: UICollectionView {

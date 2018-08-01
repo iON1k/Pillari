@@ -1,8 +1,4 @@
-//  Created by Anton Popkov on 28.11.2017.
-
-import Quick
-import Nimble
-
+import Quickimport Nimble
 @testable import Pillari
 
 // swiftlint:disable file_length

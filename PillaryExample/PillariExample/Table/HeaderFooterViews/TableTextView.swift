@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 02.11.17.
-
 import Pillari
 
 class TableTextView: UITableViewHeaderFooterView, Configurable {

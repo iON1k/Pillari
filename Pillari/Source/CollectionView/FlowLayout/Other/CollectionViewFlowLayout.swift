@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 23.10.17.
-
 public final class CollectionViewFlowLayout: NSObject {
     public let layout: UICollectionViewFlowLayout
     public var dataSource: CollectionFlowLayoutSourceProtocol

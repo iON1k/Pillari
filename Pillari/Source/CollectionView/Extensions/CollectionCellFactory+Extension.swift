@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 27.10.17.
-
 public extension CollectionCellFactory {
     convenience init<TCell: UICollectionViewCell>(_ cellType: TCell.Type, reuseId: String? = nil) {
         self.init { collectionView, indexPath in

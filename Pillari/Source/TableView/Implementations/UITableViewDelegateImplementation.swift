@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 25.08.17.
-
 public final class UITableViewDelegateImplementation: UIScrollViewDelegateImplementation {
     public var dataSource: TableDataSourceProtocol
 

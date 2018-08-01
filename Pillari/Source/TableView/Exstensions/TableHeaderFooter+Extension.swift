@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 29.09.17.
-
 public extension TableHeaderFooter where TView: TableElementViewProtocol {
     convenience init(
         item: TView.Configuration,

@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 29.09.17.
-
 public struct TableRowConfiguration {
     public struct Selection {
         public var shouldHighlight: Bool

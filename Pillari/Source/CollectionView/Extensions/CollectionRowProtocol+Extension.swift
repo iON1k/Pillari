@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 12.04.2018.
-
 public extension CollectionRowProtocol {
     func withAction(_ eventsHandler: @escaping EventsHandler<CollectionRowEvent>.Handler) -> CollectionRowProtocol {
         return CollectionRow<UICollectionViewCell>(

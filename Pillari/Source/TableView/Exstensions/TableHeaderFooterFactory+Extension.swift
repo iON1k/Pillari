@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 26.10.17.
-
 public extension TableHeaderFooterFactory {
     convenience init<TView: UITableViewHeaderFooterView>(_ viewType: TView.Type, reuseId: String? = nil) {
         self.init { tableView, _ in

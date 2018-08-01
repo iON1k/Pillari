@@ -1,10 +1,6 @@
-//  Created by Anton Popkov on 10.11.17.
-
-import Quick
-import Nimble
+import Quickimport Nimble
 
 // swiftlint:disable function_body_length
-
 @testable import Pillari
 
 class TableHeaderFooterExtensionTests: QuickSpec {

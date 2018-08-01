@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 25.10.17.
-
 public final class UICollectionViewDelegateImplementation: UIScrollViewDelegateImplementation {
     public var dataSource: CollectionDataSourceProtocol
 

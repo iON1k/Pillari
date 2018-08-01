@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 24.10.17.
-
 public extension CollectionFlowLayoutSourceProtocol {
     func rowLayout(section sectionIndex: Int, row rowIndex: Int) -> CollectionElementFlowLayoutProtocol? {
         return sectionLayout(for: sectionIndex)?.rowsLayout[try: rowIndex]

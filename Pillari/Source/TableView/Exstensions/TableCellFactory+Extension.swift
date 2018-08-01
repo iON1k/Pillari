@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 26.10.17.
-
 public extension TableCellFactory {
     convenience init<TCell: UITableViewCell>(_ cellType: TCell.Type, reuseId: String? = nil) {
         self.init { tableView, _ in

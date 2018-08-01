@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 25.08.17.
-
 public extension UITableView {
     func registerCell<TCell: UITableViewCell>(_ cellType: TCell.Type, reuseId: String? = nil) {
         let normalizedReuseId = reuseId ?? UITableView.defaultReuseId(for: cellType)

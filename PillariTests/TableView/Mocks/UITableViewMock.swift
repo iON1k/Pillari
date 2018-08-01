@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 07.11.17.
-
 import UIKit
 
 class UITableViewMock: UITableView {

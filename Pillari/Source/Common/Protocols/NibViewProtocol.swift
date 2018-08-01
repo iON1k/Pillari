@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 04.10.17.
-
 public protocol NibViewProtocol {
     static var nib: UINib { get }
 }

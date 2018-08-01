@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 25.08.17.
-
 public extension TableDataSourceProtocol {
     func row(section sectionIndex: Int, row rowIndex: Int) -> TableRowProtocol? {
         return section(for: sectionIndex)?.rows[try: rowIndex]

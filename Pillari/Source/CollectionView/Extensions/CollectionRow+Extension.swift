@@ -1,5 +1,3 @@
-//  Created by Anton Popkov on 27.10.17.
-
 public extension CollectionRow where TCell: Configurable {
     convenience init(item: TCell.Configuration,
                      configuration: CollectionRowConfiguration = .default,
