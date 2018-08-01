@@ -34,18 +34,9 @@ final class MainViewController: UIViewController {
     }
 
     private func createRow(with title: String, action: @escaping () -> Void) -> TableRowProtocol {
-        return TableRow<UITableViewCell>(heightCalculator: CGFloat(50)) { event in
-            switch event {
-            case .didSelect(let context):
-                context.table .deselectRow(at: context.index, animated: true)
-                action()
-            case .didConfigure(let context):
-                let cell = context.cell
-                cell.textLabel?.text = title
-            default:
-                break
-            }
-        }
+        return TableRow<UITableViewCell>(heightCalculator: CGFloat(50))
+            .withDidSelect { _ in action() }
+            .withDidConfigure { $0.cell.textLabel?.text = title }
     }
 
     private func onTableRowPressed() {

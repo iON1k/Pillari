@@ -1,7 +1,9 @@
 public enum CollectionSupplementaryEvent {
-    case didConfigure(context: (collection: UICollectionView, view: UICollectionReusableView, kind: String, index: IndexPath))
-    case willDisplay(context: (collection: UICollectionView, view: UICollectionReusableView, kind: String, index: IndexPath))
-    case didEndDisplaying(context: (collection: UICollectionView, view: UICollectionReusableView, kind: String, index: IndexPath))
+    public typealias Context = (collection: UICollectionView, view: UICollectionReusableView, kind: String, index: IndexPath)
+
+    case didConfigure(context: Context)
+    case willDisplay(context: Context)
+    case didEndDisplaying(context: Context)
 }
 
 public extension CollectionSupplementaryEvent {

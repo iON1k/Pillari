@@ -57,23 +57,16 @@ final class TableViewController: UIViewController {
 
     private func createColoredRow(from color: UIColor) -> TableRowProtocol {
         let configuration = TableRowConfiguration(editing: TableRowConfiguration.Editing(canEdit: true, canMove: true))
-        return TableRow<TableColoredCell>(
-            item: color,
-            configuration: configuration) { [weak self] event in
-                guard let strongSelf = self else { return }
-
-                switch event {
-                case .didSelect(let context):
-                    strongSelf.onColoredCellPressed(in: context.index, with: color)
-                case .move(let context):
-                    strongSelf.onColoredCellMoved(from: context.sourceIndex, to: context.destinationIndex)
-                default:
-                    break
-                }
+        return TableRow<TableColoredCell>(item: color, configuration: configuration)
+            .withDidSelect { [weak self] _ in
+                self?.onColoredCellPressed(with: color)
+            }
+            .withMove { [weak self] context in
+                self?.onColoredCellMoved(from: context.sourceIndex, to: context.destinationIndex)
             }
     }
 
-    private func onColoredCellPressed(in indexPath: IndexPath, with color: UIColor) {
+    private func onColoredCellPressed(with color: UIColor) {
         navigationController?.pushViewController(UIViewController.create(with: color), animated: true)
     }
 

@@ -24,19 +24,12 @@ final class CollectionViewController: UICollectionViewController {
     }
 
     private func createColoredRow(with color: UIColor) -> CollectionFlowLayoutRowProtocol {
-        return CollectionRow<CollectionColoredCell>(
-            item: color,
-            configuration: CollectionRowConfiguration(canMove: true)) { [weak self] event in
-                guard let strongSelf = self else { return }
-
-                switch event {
-                case .didSelect:
-                    strongSelf.onColoredCellPressed(with: color)
-                case .move(let context):
-                    strongSelf.onColoredCellMoved(from: context.sourceIndex, to: context.destinationIndex)
-                default:
-                    break
-                }
+        return CollectionRow<CollectionColoredCell>(item: color, configuration: CollectionRowConfiguration(canMove: true))
+            .withDidSelect { [weak self] _ in
+                self?.onColoredCellPressed(with: color)
+            }
+            .withMove { [weak self] context in
+                self?.onColoredCellMoved(from: context.sourceIndex, to: context.destinationIndex)
             }
             .withFlowLayout(sizeCalculator: CGSize(width: 100, height: 100))
     }

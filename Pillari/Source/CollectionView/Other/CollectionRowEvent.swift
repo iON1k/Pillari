@@ -1,11 +1,15 @@
 public enum CollectionRowEvent {
-    case didConfigure(context: (collection: UICollectionView, cell: UICollectionViewCell, index: IndexPath))
-    case willDisplay(context: (collection: UICollectionView, cell: UICollectionViewCell, index: IndexPath))
-    case didEndDisplaying(context: (collection: UICollectionView, cell: UICollectionViewCell, index: IndexPath))
-    case didSelect(context: (collection: UICollectionView, index: IndexPath))
-    case didDeselect(context: (collection: UICollectionView, index: IndexPath))
-    case didHighlight(context: (collection: UICollectionView, index: IndexPath))
-    case didUnhighlight(context: (collection: UICollectionView, index: IndexPath))
-    case move(context: (collection: UICollectionView, sourceIndex: IndexPath, destinationIndex: IndexPath))
+    public typealias Context = (collection: UICollectionView, index: IndexPath)
+    public typealias CellContext = (collection: UICollectionView, cell: UICollectionViewCell, index: IndexPath)
+    public typealias MoveContext = (collection: UICollectionView, sourceIndex: IndexPath, destinationIndex: IndexPath)
+
+    case didConfigure(context: CellContext)
+    case willDisplay(context: CellContext)
+    case didEndDisplaying(context: CellContext)
+    case didSelect(context: Context)
+    case didDeselect(context: Context)
+    case didHighlight(context: Context)
+    case didUnhighlight(context: Context)
+    case move(context: MoveContext)
     case performAction(context: (collection: UICollectionView, action: Selector, index: IndexPath, sender: Any?))
 }
