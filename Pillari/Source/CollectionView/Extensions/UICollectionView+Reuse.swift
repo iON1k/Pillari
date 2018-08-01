@@ -25,12 +25,14 @@ public extension UICollectionView {
     }
 
     func dequeueReusableCellWithAutoregistration<TCell: UICollectionViewCell>(_ cellType: TCell.Type,
-                                                                              indexPath: IndexPath, reuseId: String? = nil) -> TCell? {
+                                                                              indexPath: IndexPath, reuseId: String? = nil) -> TCell {
         registerCell(cellType, reuseId: reuseId)
 
-        let cell = dequeueReusableCell(cellType, indexPath: indexPath, reuseId: reuseId)
-        assert(cell != nil, "UICollectionView can not dequeue cell with type \(cellType) "
-            + "for reuseId \(reuseId ?? UICollectionView.defaultReuseId(for: cellType))")
+        guard let cell = dequeueReusableCell(cellType, indexPath: indexPath, reuseId: reuseId) else {
+            assertionFailure("UICollectionView can not dequeue cell with type \(cellType) "
+                + "for reuseId \(reuseId ?? UICollectionView.defaultReuseId(for: cellType))")
+            return TCell()
+        }
 
         return cell
     }
@@ -42,12 +44,14 @@ public extension UICollectionView {
     }
 
     func dequeueReusableSupplementaryViewWithAutoregistration<TView: UICollectionReusableView>(
-        _ viewType: TView.Type, kind: String, indexPath: IndexPath, reuseId: String? = nil) -> TView? {
+        _ viewType: TView.Type, kind: String, indexPath: IndexPath, reuseId: String? = nil) -> TView {
         registerSupplementaryView(viewType, kind: kind, reuseId: reuseId)
 
-        let view = dequeueReusableSupplementaryView(viewType, kind: kind, indexPath: indexPath, reuseId: reuseId)
-        assert(view != nil, "UICollectionView can not dequeue supplementary view with type \(viewType) "
-            + "for reuseId \(reuseId ?? UICollectionView.defaultReuseId(for: viewType))")
+        guard let view = dequeueReusableSupplementaryView(viewType, kind: kind, indexPath: indexPath, reuseId: reuseId) else {
+            assertionFailure("UICollectionView can not dequeue supplementary view with type \(viewType) "
+                + "for reuseId \(reuseId ?? UICollectionView.defaultReuseId(for: viewType))")
+            return TView()
+        }
 
         return view
     }

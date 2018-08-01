@@ -23,12 +23,14 @@ public extension UITableView {
         return dequeueReusableCell(withIdentifier: normalizedReuseId) as? TCell
     }
 
-    func dequeueReusableCellWithAutoregistration<TCell: UITableViewCell>(_ cellType: TCell.Type, reuseId: String? = nil) -> TCell? {
+    func dequeueReusableCellWithAutoregistration<TCell: UITableViewCell>(_ cellType: TCell.Type, reuseId: String? = nil) -> TCell {
         registerCell(cellType, reuseId: reuseId)
 
-        let cell = dequeueReusableCell(cellType, reuseId: reuseId)
-        assert(cell != nil, "UITableView can not dequeue cell with type \(cellType) "
-            + "for reuseId \(reuseId ?? UITableView.defaultReuseId(for: cellType))")
+        guard let cell = dequeueReusableCell(cellType, reuseId: reuseId) else {
+            assertionFailure("UITableView can not dequeue cell with type \(cellType) "
+                + "for reuseId \(reuseId ?? UITableView.defaultReuseId(for: cellType))")
+            return TCell()
+        }
 
         return cell
     }
@@ -39,12 +41,14 @@ public extension UITableView {
     }
 
     func dequeueReusableHeaderFooterViewWithAutoregistration<TView: UITableViewHeaderFooterView>(_ viewType: TView.Type,
-                                                                                                 reuseId: String? = nil) -> TView? {
+                                                                                                 reuseId: String? = nil) -> TView {
         registerHeaderFooterView(viewType, reuseId: reuseId)
 
-        let view = dequeueReusableHeaderFooterView(viewType, reuseId: reuseId)
-        assert(view != nil, "UITableView can not dequeue header/footer view with type \(viewType) "
-            + "for reuseId \(reuseId ?? UITableView.defaultReuseId(for: viewType))")
+        guard let view = dequeueReusableHeaderFooterView(viewType, reuseId: reuseId) else {
+            assertionFailure("UITableView can not dequeue header/footer view with type \(viewType) "
+                + "for reuseId \(reuseId ?? UITableView.defaultReuseId(for: viewType))")
+            return TView()
+        }
 
         return view
     }
