@@ -56,6 +56,10 @@ public final class CollectionPillar {
     }
 
     private func updateCollectionLayout() {
+        guard collectionView?.collectionViewLayout != dataProvider.layout else {
+            return
+        }
+
         collectionView?.collectionViewLayout = dataProvider.layout
     }
 
