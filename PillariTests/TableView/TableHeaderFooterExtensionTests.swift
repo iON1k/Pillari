@@ -1,4 +1,5 @@
-import Quickimport Nimble
+import Quick
+import Nimble
 
 // swiftlint:disable function_body_length
 @testable import Pillari

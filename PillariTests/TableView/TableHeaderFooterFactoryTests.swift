@@ -1,4 +1,5 @@
-import Quickimport Nimble
+import Quick
+import Nimble
 @testable import Pillari
 
 class TableHeaderFooterFactoryTests: QuickSpec {

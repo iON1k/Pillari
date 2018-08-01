@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183A205F2111B625000FE5B6 /* Pods_Pillari_PillariTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183A205E2111B625000FE5B6 /* Pods_Pillari_PillariTests.framework */; };
 		18E15ED3207F916B0051BCF9 /* TableRowProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E15ED2207F916B0051BCF9 /* TableRowProtocol+Extension.swift */; };
 		18E15ED5207F92B10051BCF9 /* CollectionRowProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E15ED4207F92B10051BCF9 /* CollectionRowProtocol+Extension.swift */; };
 		18E15ED7207F932B0051BCF9 /* CollectionSupplementaryProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E15ED6207F932B0051BCF9 /* CollectionSupplementaryProtocol+Extension.swift */; };
@@ -192,6 +193,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183A205E2111B625000FE5B6 /* Pods_Pillari_PillariTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Pillari_PillariTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E15ED2207F916B0051BCF9 /* TableRowProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableRowProtocol+Extension.swift"; sourceTree = "<group>"; };
 		18E15ED4207F92B10051BCF9 /* CollectionRowProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionRowProtocol+Extension.swift"; sourceTree = "<group>"; };
 		18E15ED6207F932B0051BCF9 /* CollectionSupplementaryProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionSupplementaryProtocol+Extension.swift"; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183A205F2111B625000FE5B6 /* Pods_Pillari_PillariTests.framework in Frameworks */,
 				407713BC1F9DE7E7006DAB14 /* Pillari.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +393,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183A205D2111B625000FE5B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				183A205E2111B625000FE5B6 /* Pods_Pillari_PillariTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		400AD6231F9F8232001E0F5F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,6 +573,7 @@
 				407713BF1F9DE7E7006DAB14 /* PillariTests */,
 				407713B31F9DE7E7006DAB14 /* Products */,
 				DB5A6701240AF4D67D574A3A /* Pods */,
+				183A205D2111B625000FE5B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
