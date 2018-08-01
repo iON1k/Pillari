@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		183A205F2111B625000FE5B6 /* Pods_Pillari_PillariTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183A205E2111B625000FE5B6 /* Pods_Pillari_PillariTests.framework */; };
+		183A20612111CD63000FE5B6 /* TableRowProtocolExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A20602111CD63000FE5B6 /* TableRowProtocolExtensionTests.swift */; };
+		183A20632111CDFF000FE5B6 /* TableHeaderFooterProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A20622111CDFF000FE5B6 /* TableHeaderFooterProtocol+Extension.swift */; };
+		183A20652111E750000FE5B6 /* TableHeaderFooterProtocolExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A20642111E750000FE5B6 /* TableHeaderFooterProtocolExtensionTests.swift */; };
+		183A20672111EB13000FE5B6 /* CollectionRowProtocolExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A20662111EB13000FE5B6 /* CollectionRowProtocolExtensionTests.swift */; };
+		183A20692111EC7A000FE5B6 /* CollectionSupplementaryProtocolExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A20682111EC7A000FE5B6 /* CollectionSupplementaryProtocolExtensionTests.swift */; };
 		18E15ED3207F916B0051BCF9 /* TableRowProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E15ED2207F916B0051BCF9 /* TableRowProtocol+Extension.swift */; };
 		18E15ED5207F92B10051BCF9 /* CollectionRowProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E15ED4207F92B10051BCF9 /* CollectionRowProtocol+Extension.swift */; };
 		18E15ED7207F932B0051BCF9 /* CollectionSupplementaryProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E15ED6207F932B0051BCF9 /* CollectionSupplementaryProtocol+Extension.swift */; };
@@ -194,6 +199,11 @@
 
 /* Begin PBXFileReference section */
 		183A205E2111B625000FE5B6 /* Pods_Pillari_PillariTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Pillari_PillariTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		183A20602111CD63000FE5B6 /* TableRowProtocolExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowProtocolExtensionTests.swift; sourceTree = "<group>"; };
+		183A20622111CDFF000FE5B6 /* TableHeaderFooterProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableHeaderFooterProtocol+Extension.swift"; sourceTree = "<group>"; };
+		183A20642111E750000FE5B6 /* TableHeaderFooterProtocolExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderFooterProtocolExtensionTests.swift; sourceTree = "<group>"; };
+		183A20662111EB13000FE5B6 /* CollectionRowProtocolExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRowProtocolExtensionTests.swift; sourceTree = "<group>"; };
+		183A20682111EC7A000FE5B6 /* CollectionSupplementaryProtocolExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSupplementaryProtocolExtensionTests.swift; sourceTree = "<group>"; };
 		18E15ED2207F916B0051BCF9 /* TableRowProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableRowProtocol+Extension.swift"; sourceTree = "<group>"; };
 		18E15ED4207F92B10051BCF9 /* CollectionRowProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionRowProtocol+Extension.swift"; sourceTree = "<group>"; };
 		18E15ED6207F932B0051BCF9 /* CollectionSupplementaryProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionSupplementaryProtocol+Extension.swift"; sourceTree = "<group>"; };
@@ -469,8 +479,10 @@
 				40031C5A1FC5B8E900BBDFF3 /* CollectionSupplementaryFactoryExtensionTests.swift */,
 				403D2DC51FC4387500E4D64B /* CollectionRowTests.swift */,
 				40031C601FC5C1D300BBDFF3 /* CollectionRowExtensionTests.swift */,
+				183A20662111EB13000FE5B6 /* CollectionRowProtocolExtensionTests.swift */,
 				403D2DC71FC4395500E4D64B /* CollectionSupplementaryTests.swift */,
 				40031C621FC5C8C800BBDFF3 /* CollectionSupplementaryExtensionTests.swift */,
+				183A20682111EC7A000FE5B6 /* CollectionSupplementaryProtocolExtensionTests.swift */,
 				40031C5C1FC5BCCC00BBDFF3 /* CollectionDataSourceProtocolExtensionTests.swift */,
 				40031C5E1FC5BFEB00BBDFF3 /* CollectionDataProviderProtocolExtensionTests.swift */,
 				406A399D1FC720E100DE2F1B /* CollectionSupplementaryEventTests.swift */,
@@ -628,6 +640,7 @@
 				407714841F9DEB00006DAB14 /* TableRow+Extension.swift */,
 				18E15ED2207F916B0051BCF9 /* TableRowProtocol+Extension.swift */,
 				407714831F9DEB00006DAB14 /* TableHeaderFooter+Extension.swift */,
+				183A20622111CDFF000FE5B6 /* TableHeaderFooterProtocol+Extension.swift */,
 				40DCDC4E1FA0A15000D70936 /* Array+TablePillar.swift */,
 			);
 			path = Exstensions;
@@ -806,8 +819,10 @@
 				402FFA0F1FA220D600E9628F /* TableHeaderFooterFactoryExtensionTest.swift */,
 				406B9B2D1FBAF7850013B7B8 /* TableRowTests.swift */,
 				40DC58C01FB4BB0E006D725A /* TableRowExtensionTests.swift */,
+				183A20602111CD63000FE5B6 /* TableRowProtocolExtensionTests.swift */,
 				406B9B2F1FBAFA500013B7B8 /* TableHeaderFooterTests.swift */,
 				40DC58C21FB505A3006D725A /* TableHeaderFooterExtensionTests.swift */,
+				183A20642111E750000FE5B6 /* TableHeaderFooterProtocolExtensionTests.swift */,
 				406B9B311FBAFB460013B7B8 /* TableSectionTests.swift */,
 				406B9B351FBAFF6C0013B7B8 /* TableRowConfigurationTests.swift */,
 				406B9B331FBAFDB40013B7B8 /* TableHeaderFooterConfigurationTests.swift */,
@@ -1085,6 +1100,7 @@
 				400AD6181F9F59F8001E0F5F /* CollectionSupplementary.swift in Sources */,
 				407714BA1F9DEB00006DAB14 /* TableSectionProtocol.swift in Sources */,
 				40DCDC4B1FA0962700D70936 /* CollectionPillar.swift in Sources */,
+				183A20632111CDFF000FE5B6 /* TableHeaderFooterProtocol+Extension.swift in Sources */,
 				40DAE67B1FA36F7C00643402 /* CollectionElementSizeCalculator+Extension.swift in Sources */,
 				40797BC91F9E42D80095F783 /* UICollectionViewFlowLayout+CustomDelegate.swift in Sources */,
 				40797BBE1F9E2A730095F783 /* CollectionSectionProtocol.swift in Sources */,
@@ -1141,6 +1157,7 @@
 				406B9B2E1FBAF7850013B7B8 /* TableRowTests.swift in Sources */,
 				406A39A01FC7235500DE2F1B /* CollectionRowConfigurationTests.swift in Sources */,
 				406B9B321FBAFB460013B7B8 /* TableSectionTests.swift in Sources */,
+				183A20652111E750000FE5B6 /* TableHeaderFooterProtocolExtensionTests.swift in Sources */,
 				408F750E1FB5D5E5001309F6 /* UITableViewDataSourceImplementationTests.swift in Sources */,
 				406B9B341FBAFDB40013B7B8 /* TableHeaderFooterConfigurationTests.swift in Sources */,
 				40DC58BA1FB4AE15006D725A /* UITableViewDataSourceMock.swift in Sources */,
@@ -1163,6 +1180,7 @@
 				4072AAFC1FBB2D7D0019EFB4 /* CollectionElementSizeCalculatorExtensionTests.swift in Sources */,
 				40FE208A1FB3210D0038F35A /* TableDataSourceProtocolExtensionTests.swift in Sources */,
 				406B9B2C1FBAE3890013B7B8 /* CollectionFlowLayoutDataProviderTests.swift in Sources */,
+				183A20612111CD63000FE5B6 /* TableRowProtocolExtensionTests.swift in Sources */,
 				409A5A561FBC710E006C5FFD /* CollectionViewFlowLayoutForwardDelegateTests.swift in Sources */,
 				408F750C1FB5C260001309F6 /* EventsHandlerMock.swift in Sources */,
 				40DC58C11FB4BB0E006D725A /* TableRowExtensionTests.swift in Sources */,
@@ -1173,6 +1191,8 @@
 				4077147B1F9DEAEC006DAB14 /* TableOtherMocks.swift in Sources */,
 				40DC58BF1FB4B1D0006D725A /* TableElementHeightCalculatorExtensionTests.swift in Sources */,
 				4044DD8C1FCD71E600AAB0DA /* UICollectionViewDelegateMock.swift in Sources */,
+				183A20672111EB13000FE5B6 /* CollectionRowProtocolExtensionTests.swift in Sources */,
+				183A20692111EC7A000FE5B6 /* CollectionSupplementaryProtocolExtensionTests.swift in Sources */,
 				406B9B3A1FBB09E80013B7B8 /* CollectionFlowLayoutSupplementaryTests.swift in Sources */,
 				406B9B261FB9F3240013B7B8 /* UICollectionViewDataSourceMock.swift in Sources */,
 				403D2DCA1FC43C7300E4D64B /* CollectionCellFactoryExtensionTests.swift in Sources */,
