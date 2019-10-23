@@ -129,7 +129,7 @@ class UICollectionViewDelegateImplementationEventsTests: QuickSpec {
                 collectionDelegate.collectionView?(
                     expectedCollectionView,
                     willDisplaySupplementaryView: expectedSupplementaryView,
-                    forElementKind: UICollectionElementKindSectionHeader,
+                    forElementKind: UICollectionView.elementKindSectionHeader,
                     at: expectedSupplementaryIndexPath
                 )
 
@@ -142,7 +142,7 @@ class UICollectionViewDelegateImplementationEventsTests: QuickSpec {
 
                 expect(context.collection).to(beIdenticalTo(expectedCollectionView))
                 expect(context.view).to(beIdenticalTo(expectedSupplementaryView))
-                expect(context.kind).to(equal(UICollectionElementKindSectionHeader))
+                expect(context.kind).to(equal(UICollectionView.elementKindSectionHeader))
                 expect(context.index).to(equal(expectedSupplementaryIndexPath))
             }
         }
@@ -152,7 +152,7 @@ class UICollectionViewDelegateImplementationEventsTests: QuickSpec {
                 collectionDelegate.collectionView?(
                     expectedCollectionView,
                     didEndDisplayingSupplementaryView: expectedSupplementaryView,
-                    forElementOfKind: UICollectionElementKindSectionHeader,
+                    forElementOfKind: UICollectionView.elementKindSectionHeader,
                     at: expectedSupplementaryIndexPath
                 )
 
@@ -165,7 +165,7 @@ class UICollectionViewDelegateImplementationEventsTests: QuickSpec {
 
                 expect(context.collection).to(beIdenticalTo(expectedCollectionView))
                 expect(context.view).to(beIdenticalTo(expectedSupplementaryView))
-                expect(context.kind).to(equal(UICollectionElementKindSectionHeader))
+                expect(context.kind).to(equal(UICollectionView.elementKindSectionHeader))
                 expect(context.index).to(equal(expectedSupplementaryIndexPath))
             }
         }

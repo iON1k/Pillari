@@ -10,8 +10,8 @@ class CollectionCellFactoryTests: QuickSpec {
                 let expectedCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
                 let expectedIndexPath = IndexPath(row: 10, section: 5)
 
-                var collectionView: UICollectionView? = nil
-                var indexPath: IndexPath? = nil
+                var collectionView: UICollectionView?
+                var indexPath: IndexPath?
 
                 let cellFactory = CollectionCellFactory { collection, index in
                     collectionView = collection

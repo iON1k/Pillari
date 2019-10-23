@@ -10,8 +10,8 @@ class TableCellFactoryTests: QuickSpec {
                 let expectedTableView = UITableView()
                 let expectedIndexPath = IndexPath(row: 10, section: 5)
 
-                var tableView: UITableView? = nil
-                var indexPath: IndexPath? = nil
+                var tableView: UITableView?
+                var indexPath: IndexPath?
 
                 let cellFactory = TableCellFactory { table, index in
                     tableView = table

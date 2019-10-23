@@ -19,7 +19,7 @@ class CollectionRowProtocolFlowLayoutTests: QuickSpec {
             it("should return valid value") {
                 let flowRow = row.withFlowAutomaticLayout()
                 expect(flowRow.row).to(beIdenticalTo(row))
-                expect(flowRow.sizeCalculator as? CGSize).to(equal(UICollectionViewFlowLayoutAutomaticSize))
+                expect(flowRow.sizeCalculator as? CGSize).to(equal(UICollectionViewFlowLayout.automaticSize))
             }
         }
     }

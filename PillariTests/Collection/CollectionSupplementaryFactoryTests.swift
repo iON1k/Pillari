@@ -11,9 +11,9 @@ class CollectionSupplementaryFactoryTests: QuickSpec {
                 let expectedCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
                 let expectedIndexPath = IndexPath(row: 10, section: 5)
 
-                var collectionView: UICollectionView? = nil
-                var kind: String? = nil
-                var indexPath: IndexPath? = nil
+                var collectionView: UICollectionView?
+                var kind: String?
+                var indexPath: IndexPath?
 
                 let supplementaryFactory = CollectionSupplementaryFactory { collection, kindParam, index in
                     collectionView = collection

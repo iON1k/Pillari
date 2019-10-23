@@ -2,6 +2,8 @@ public enum TableRowEvent {
     public typealias Context = (table: UITableView, index: IndexPath)
     public typealias CellContext = (table: UITableView, cell: UITableViewCell, index: IndexPath)
     public typealias MoveContext = (table: UITableView, sourceIndex: IndexPath, destinationIndex: IndexPath)
+    public typealias CommitEditingContext = (table: UITableView, editingStyle: UITableViewCell.EditingStyle, index: IndexPath)
+    public typealias PerformActionContext = (table: UITableView, action: Selector, index: IndexPath, sender: Any?)
 
     case didConfigure(context: CellContext)
     case willSelect(context: Context)
@@ -12,10 +14,10 @@ public enum TableRowEvent {
     case didUnhighlight(context: Context)
     case willDisplay(context: CellContext)
     case didEndDisplaying(context: CellContext)
-    case commitEditing(context: (table: UITableView, editingStyle: UITableViewCellEditingStyle, index: IndexPath))
+    case commitEditing(context: CommitEditingContext)
     case move(context: MoveContext)
     case accessoryButtonTapped(context: Context)
     case willBeginEditing(context: Context)
     case didEndEditing(context: Context)
-    case performAction(context: (table: UITableView, action: Selector, index: IndexPath, sender: Any?))
+    case performAction(context: PerformActionContext)
 }

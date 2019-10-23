@@ -202,7 +202,7 @@ extension UITableViewDelegateImplementation: UITableViewDelegate {
     }
 
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        var forwardDelegateResult: IndexPath? = nil
+        var forwardDelegateResult: IndexPath?
         let selector = #selector(UITableViewDelegate.tableView(_:willSelectRowAt:))
 
         if let forwardDelegate = forwardDelegate, forwardDelegate.responds(to: selector) {
@@ -215,7 +215,7 @@ extension UITableViewDelegateImplementation: UITableViewDelegate {
     }
 
     public func tableView(_ tableView: UITableView, willDeselectRowAt indexPath: IndexPath) -> IndexPath? {
-        var forwardDelegateResult: IndexPath? = nil
+        var forwardDelegateResult: IndexPath?
         let selector = #selector(UITableViewDelegate.tableView(_:willDeselectRowAt:))
 
         if let forwardDelegate = forwardDelegate, forwardDelegate.responds(to: selector) {
@@ -244,7 +244,7 @@ extension UITableViewDelegateImplementation: UITableViewDelegate {
         sendRowEvent(event: .didDeselect(context: (table: tableView, index: indexPath)), index: indexPath)
     }
 
-    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         if let rowEditingStyle = forwardDelegate?.tableView?(tableView, editingStyleForRowAt: indexPath) {
             return rowEditingStyle
         }

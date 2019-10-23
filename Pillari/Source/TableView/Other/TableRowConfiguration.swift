@@ -15,14 +15,14 @@ public struct TableRowConfiguration {
     public struct Editing {
         public var canEdit: Bool
         public var canMove: Bool
-        public var style: UITableViewCellEditingStyle
+        public var style: UITableViewCell.EditingStyle
         public var titleForDeleteConfirmationButton: String?
         public var actions: [UITableViewRowAction]?
         public var shouldIndent: Bool
 
         public init(canEdit: Bool = false,
                     canMove: Bool = false,
-                    style: UITableViewCellEditingStyle = .none,
+                    style: UITableViewCell.EditingStyle = .none,
                     titleForDeleteConfirmationButton: String? = nil,
                     actions: [UITableViewRowAction]? = nil,
                     shouldIndent: Bool = true) {

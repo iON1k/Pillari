@@ -920,11 +920,12 @@
 				TargetAttributes = {
 					407713B11F9DE7E7006DAB14 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 					407713BA1F9DE7E7006DAB14 = {
 						CreatedOnToolsVersion = 9.0.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -935,6 +936,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 407713A81F9DE7E7006DAB14;
 			productRefGroup = 407713B31F9DE7E7006DAB14 /* Products */;
@@ -984,7 +986,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Pillari-PillariTests/Pods-Pillari-PillariTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Pillari-PillariTests/Pods-Pillari-PillariTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -995,7 +997,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pillari-PillariTests/Pods-Pillari-PillariTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pillari-PillariTests/Pods-Pillari-PillariTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE04BAA0CC48F465B1873749 /* [CP] Check Pods Manifest.lock */ = {
@@ -1353,7 +1355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ion1k.pillari;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1375,7 +1377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ion1k.pillari;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1391,7 +1393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1406,7 +1408,7 @@
 				INFOPLIST_FILE = PillariTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

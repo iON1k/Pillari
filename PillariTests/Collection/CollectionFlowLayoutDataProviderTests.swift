@@ -87,12 +87,12 @@ class CollectionFlowLayoutDataProviderTests: QuickSpec {
 
         describe(".supplementary(with: index:)") {
             it("should return header supplementary") {
-                let supplementary = dataProvider.supplementary(with: UICollectionElementKindSectionHeader, at: indexPath20)
+                let supplementary = dataProvider.supplementary(with: UICollectionView.elementKindSectionHeader, at: indexPath20)
                 expect(supplementary).to(beIdenticalTo(header2))
             }
 
             it("should return footer supplementary") {
-                let supplementary = dataProvider.supplementary(with: UICollectionElementKindSectionFooter, at: indexPath20)
+                let supplementary = dataProvider.supplementary(with: UICollectionView.elementKindSectionFooter, at: indexPath20)
                 expect(supplementary).to(beIdenticalTo(footer2))
             }
 
@@ -102,7 +102,7 @@ class CollectionFlowLayoutDataProviderTests: QuickSpec {
             }
 
             it("should return nil supplementary for wrong row index") {
-                let supplementary = dataProvider.supplementary(with: UICollectionElementKindSectionHeader, at: IndexPath(row: 1, section: 2))
+                let supplementary = dataProvider.supplementary(with: UICollectionView.elementKindSectionHeader, at: IndexPath(row: 1, section: 2))
                 expect(supplementary).to(beNil())
             }
         }

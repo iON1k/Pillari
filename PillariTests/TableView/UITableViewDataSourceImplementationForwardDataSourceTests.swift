@@ -167,7 +167,7 @@ class UITableViewDataSourceImplementationForwardDataSourceTests: QuickSpec {
 
         describe(".commitEditingStyle") {
             it("should call forward data source method") {
-                let expectedEditingStyle = UITableViewCellEditingStyle.delete
+                let expectedEditingStyle = UITableViewCell.EditingStyle.delete
                 tableDataSource.tableView?(expectedTableView, commit: expectedEditingStyle, forRowAt: expectedIndexPath)
 
                 let event = expectOnlyOneEvent(forwardTableDataSourceMock.events)

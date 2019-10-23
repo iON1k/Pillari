@@ -28,9 +28,9 @@ public final class CollectionFlowLayoutDataProvider: CollectionDataProviderProto
         }
 
         switch kind {
-        case UICollectionElementKindSectionHeader:
+        case UICollectionView.elementKindSectionHeader:
             return section.header
-        case UICollectionElementKindSectionFooter:
+        case UICollectionView.elementKindSectionFooter:
             return section.footer
         default:
             return nil

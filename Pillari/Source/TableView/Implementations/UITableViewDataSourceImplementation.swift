@@ -88,7 +88,7 @@ extension UITableViewDataSourceImplementation: UITableViewDataSource {
         return forwardDataSource?.tableView?(tableView, sectionForSectionIndexTitle: title, at: index) ?? 0
     }
 
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         forwardDataSource?.tableView?(tableView, commit: editingStyle, forRowAt: indexPath)
 
         let row = dataSource.row(for: indexPath)

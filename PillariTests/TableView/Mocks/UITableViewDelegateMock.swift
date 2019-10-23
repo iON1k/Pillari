@@ -58,7 +58,7 @@ class UITableViewDelegateMock: NSObject {
     let shouldHighlightRow = false
     let willSelectRowIndexPath = IndexPath(row: 10, section: 15)
     let willDeselectRowIndexPath = IndexPath(row: 20, section: 25)
-    let editingStyleForRow = UITableViewCellEditingStyle.delete
+    let editingStyleForRow = UITableViewCell.EditingStyle.delete
     let titleForDeleteConfirmationButtonForRow = "TestDeleteTitle"
     let editActionsForRow = [UITableViewRowAction(), UITableViewRowAction(), UITableViewRowAction()]
     let shouldIndentWhileEditingRow = false
@@ -173,7 +173,7 @@ extension UITableViewDelegateMock: UITableViewDelegate {
     }
 
     public func tableView(_ tableView: UITableView,
-                          editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+                          editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         eventsHandler.onEvent(event: .editingStyleForRow(tableView, indexPath))
         return editingStyleForRow
     }

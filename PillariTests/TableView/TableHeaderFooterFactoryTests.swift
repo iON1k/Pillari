@@ -10,8 +10,8 @@ class TableHeaderFooterFactoryTests: QuickSpec {
                 let expectedTableView = UITableView()
                 let expectedSection = 5
 
-                var tableView: UITableView? = nil
-                var section: Int? = nil
+                var tableView: UITableView?
+                var section: Int?
 
                 let headerFooterFactory = TableHeaderFooterFactory { table, sectionParam in
                     tableView = table

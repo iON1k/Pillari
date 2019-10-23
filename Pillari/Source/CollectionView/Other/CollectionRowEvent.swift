@@ -2,6 +2,7 @@ public enum CollectionRowEvent {
     public typealias Context = (collection: UICollectionView, index: IndexPath)
     public typealias CellContext = (collection: UICollectionView, cell: UICollectionViewCell, index: IndexPath)
     public typealias MoveContext = (collection: UICollectionView, sourceIndex: IndexPath, destinationIndex: IndexPath)
+    public typealias PerformActionContext = (collection: UICollectionView, action: Selector, index: IndexPath, sender: Any?)
 
     case didConfigure(context: CellContext)
     case willDisplay(context: CellContext)
@@ -11,5 +12,5 @@ public enum CollectionRowEvent {
     case didHighlight(context: Context)
     case didUnhighlight(context: Context)
     case move(context: MoveContext)
-    case performAction(context: (collection: UICollectionView, action: Selector, index: IndexPath, sender: Any?))
+    case performAction(context: PerformActionContext)
 }

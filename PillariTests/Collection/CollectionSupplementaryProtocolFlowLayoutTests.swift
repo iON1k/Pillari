@@ -21,7 +21,7 @@ class CollectionSupplementaryProtocolFlowLayoutTests: QuickSpec {
             it("should return valid value") {
                 let flowSupplementary = supplementary.withFlowAutomaticLayout()
                 expect(flowSupplementary.supplementary).to(beIdenticalTo(supplementary))
-                expect(flowSupplementary.sizeCalculator as? CGSize).to(equal(UICollectionViewFlowLayoutAutomaticSize))
+                expect(flowSupplementary.sizeCalculator as? CGSize).to(equal(UICollectionViewFlowLayout.automaticSize))
             }
         }
     }

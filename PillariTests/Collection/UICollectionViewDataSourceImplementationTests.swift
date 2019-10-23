@@ -90,7 +90,7 @@ class UICollectionViewDataSourceImplementationTests: QuickSpec {
             it("should result equals to expected value") {
                 let viewForSupplementaryElement = collectionDataSource.collectionView?(
                     collectionView,
-                    viewForSupplementaryElementOfKind: UICollectionElementKindSectionHeader,
+                    viewForSupplementaryElementOfKind: UICollectionView.elementKindSectionHeader,
                     at: IndexPath(row: 0, section: sectionIndex2)
                 )
 

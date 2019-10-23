@@ -9,7 +9,7 @@ class TableRowConfigurationTests: QuickSpec {
         let shouldShowMenu = true
         let canEdit = true
         let canMove = true
-        let editingStyle = UITableViewCellEditingStyle.delete
+        let editingStyle = UITableViewCell.EditingStyle.delete
         let titleForDeleteConfirmationButton = "TestDelete"
         let editingActions = (0...4).map {_ in UITableViewRowAction() }
         let shouldIndent = false

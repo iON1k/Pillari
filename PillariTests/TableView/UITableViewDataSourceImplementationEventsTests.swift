@@ -41,7 +41,7 @@ class UITableViewDataSourceImplementationEventsTests: QuickSpec {
 
         describe(".commitEditingStyle") {
             it("should send commitEditing event") {
-                let expectedEditingStyle = UITableViewCellEditingStyle.delete
+                let expectedEditingStyle = UITableViewCell.EditingStyle.delete
                 tableDataSource.tableView?(expectedTableView, commit: expectedEditingStyle, forRowAt: expectedIndexPath)
                 let event = expectOnlyOneEvent(eventsHandler.events)
                 guard case .commitEditing(let context)? = event else {

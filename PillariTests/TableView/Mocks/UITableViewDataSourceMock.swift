@@ -11,7 +11,7 @@ class UITableViewDataSourceMock: NSObject {
         case canMoveRow(UITableView, IndexPath)
         case sectionIndexTitles(UITableView)
         case sectionForSectionIndexTitle(UITableView, String, Int)
-        case commitEditingStyle(UITableView, UITableViewCellEditingStyle, IndexPath)
+        case commitEditingStyle(UITableView, UITableViewCell.EditingStyle, IndexPath)
         case moveRow(UITableView, IndexPath, IndexPath)
     }
 
@@ -77,7 +77,7 @@ extension UITableViewDataSourceMock: UITableViewDataSource {
         return sectionForSectionIndexTitle
     }
 
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle,
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,
                           forRowAt indexPath: IndexPath) {
         eventsHandler.onEvent(event: .commitEditingStyle(tableView, editingStyle, indexPath))
     }
